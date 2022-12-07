@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7217E56D4EC210088D84C627 /* Pods_FairBidSDKExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9240DD93448A99F5D278D0 /* Pods_FairBidSDKExample.framework */; };
 		9127AD9E293F9A2C00F7204C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9127AD9D293F9A2C00F7204C /* AppDelegate.swift */; };
 		9127ADA0293F9A2C00F7204C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9127AD9F293F9A2C00F7204C /* SceneDelegate.swift */; };
 		9127ADA2293F9A2C00F7204C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9127ADA1293F9A2C00F7204C /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		9127ADA6293F9A2E00F7204C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9127ADA9293F9A2E00F7204C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9127ADAB293F9A2E00F7204C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A285D8DCCB83308394D43C96 /* Pods-FairBidSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FairBidSDKExample.debug.xcconfig"; path = "Target Support Files/Pods-FairBidSDKExample/Pods-FairBidSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
+		AB9240DD93448A99F5D278D0 /* Pods_FairBidSDKExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FairBidSDKExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5DCD70CAF6EC182509963F5 /* Pods-FairBidSDKExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FairBidSDKExample.release.xcconfig"; path = "Target Support Files/Pods-FairBidSDKExample/Pods-FairBidSDKExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7217E56D4EC210088D84C627 /* Pods_FairBidSDKExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C8E95F814C5A27EB86E5D2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A285D8DCCB83308394D43C96 /* Pods-FairBidSDKExample.debug.xcconfig */,
+				C5DCD70CAF6EC182509963F5 /* Pods-FairBidSDKExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9127AD91293F9A2C00F7204C = {
 			isa = PBXGroup;
 			children = (
 				9127AD9C293F9A2C00F7204C /* FairBidSDKExample */,
 				9127AD9B293F9A2C00F7204C /* Products */,
+				7C8E95F814C5A27EB86E5D2F /* Pods */,
+				E946080FA05E9E7D411E3E34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = FairBidSDKExample;
 			sourceTree = "<group>";
 		};
+		E946080FA05E9E7D411E3E34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB9240DD93448A99F5D278D0 /* Pods_FairBidSDKExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9127ADAE293F9A2E00F7204C /* Build configuration list for PBXNativeTarget "FairBidSDKExample" */;
 			buildPhases = (
+				4DB6801921A3F3BD1BCD9819 /* [CP] Check Pods Manifest.lock */,
 				9127AD96293F9A2C00F7204C /* Sources */,
 				9127AD97293F9A2C00F7204C /* Frameworks */,
 				9127AD98293F9A2C00F7204C /* Resources */,
+				6A535BDC19F1456B04806FD4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = 9127AD95293F9A2C00F7204C /* Build configuration list for PBXProject "FairBidSDKExample" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DB6801921A3F3BD1BCD9819 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FairBidSDKExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A535BDC19F1456B04806FD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FairBidSDKExample/Pods-FairBidSDKExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FairBidSDKExample/Pods-FairBidSDKExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FairBidSDKExample/Pods-FairBidSDKExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9127AD96293F9A2C00F7204C /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		9127ADAF293F9A2E00F7204C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A285D8DCCB83308394D43C96 /* Pods-FairBidSDKExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		9127ADB0293F9A2E00F7204C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5DCD70CAF6EC182509963F5 /* Pods-FairBidSDKExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

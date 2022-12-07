@@ -1,0 +1,2 @@
+${PODS_ROOT}/Target Support Files/Pods-FairBidSDKExample/Pods-FairBidSDKExample-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/FairBidSDK/FairBidSDK.framework/FairBidSDK
